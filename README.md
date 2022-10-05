@@ -5,7 +5,7 @@ A simple server list for Minecraft Classic servers
 A server list software written in Python for Minecraft Classic servers
 
 # The source code! It's yucky
-This project was originally intended as a joke and a challenge for my self, but I managed to make this fully fledge<br>
+This project was originally intended as a joke and a challenge for my self, but I managed to make this fully fledged<br>
 I will revisit and recreate it from scratch but for now this is what you have to use
 
 # How do I use it?
