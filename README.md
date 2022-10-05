@@ -30,6 +30,8 @@ note: these are the defaults in case you mess up
 4. You may now use the MPPASS to connect to the server (Make sure the USERNAME matches the one used in the request as IT IS CASE SENSITIVE)
 
 # How do I make my vanilla server connect to the list?
+You have to use a proxy in order for the server to connect to the list!<br>
+The following steps use "Telerik Fiddler" as the proxy as it's the easiest to use<br><br>
 1. Download [Telerik Fiddler](https://telerik-fiddler.s3.amazonaws.com/fiddler/FiddlerSetup.exe)
 2. Go to File (top menu) and uncheck "Capture Traffic"
 3. Go to "FiddlerScript" from the top of the right section
@@ -54,5 +56,9 @@ class Handlers
     }
 }
 ```
-5. Click "Save Script"
-6. Now go to your server run script command and add `-Dhttp.proxyHost=127.0.0.1 -Dhttp.proxyPort=8888` after java, your run command should look like this:
+5. Click "Save Script" and minimize Fiddler (do not close it as the server will fail to connect to the proxy)
+6. Now go to your server run script command and add `-Dhttp.proxyHost=127.0.0.1 -Dhttp.proxyPort=8888` after java, your run command should look something simillar to this: `java.exe -Dhttp.proxyHost=127.0.0.1 -Dhttp.proxyPort=8888 -cp minecraft-server.jar com.mojang.minecraft.server.MinecraftServer`
+7. Enjoy
+
+# It's not working! Where can I get help?
+You can create a new issue in the "Issues" tab
