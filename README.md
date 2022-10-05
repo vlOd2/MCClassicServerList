@@ -9,6 +9,10 @@ This project was originally intended as a joke and a challenge for my self, but 
 I will revisit and recreate it from scratch but for now this is what you have to use
 
 # How do I use it?
+For this step you should have a domain registered and opened the TCP port you specified in the config<br>
+If you don't have a domain you can replace url with "http://[your public ip]" (you can get your ip by going to http://icanhazip.com/)<br>
+If people outside your network can't access your list, make sure your listen port is opened, some isps block the default port used and port forwarding entirely! (you can use https://www.yougetsignal.com/tools/open-ports/ to check)
+
 1. Download python from https://www.python.org/downloads/
 2. Download MCClassicServerList.py from this repository
 3. Edit the settings listed bellow in MCClassicServerList.py:
@@ -16,7 +20,7 @@ I will revisit and recreate it from scratch but for now this is what you have to
 listenip = "0.0.0.0"
 listenport = 80
 clean_timeout = 120
-url = "http://localhost"
+url = "http://localhost:<same value as listenport>"
 
 note: these are the defaults in case you mess up
 ```
