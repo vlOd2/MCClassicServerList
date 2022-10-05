@@ -62,7 +62,9 @@ class Handlers
 ```
 5. Click "Save Script" and minimize Fiddler (do not close it as the server will fail to connect to the proxy)
 6. Now go to your server run script command and add `-Dhttp.proxyHost=127.0.0.1 -Dhttp.proxyPort=8888` after java, your run command should look something simillar to this: `java.exe -Dhttp.proxyHost=127.0.0.1 -Dhttp.proxyPort=8888 -cp minecraft-server.jar com.mojang.minecraft.server.MinecraftServer`
-7. Enjoy
+7. Download the MPPASS patch from releases (it's called i.class) and open your server jar with [7-Zip](https://7-zip.org) (or a familliar program) and navigate to com/mojang/minecraft/server and drag and drop the download "i.class" file (backup your jar first)
+8. Run your server
+9. Enjoy
 
 # It's not working! Where can I get help?
 You can create a new issue in the "Issues" tab
